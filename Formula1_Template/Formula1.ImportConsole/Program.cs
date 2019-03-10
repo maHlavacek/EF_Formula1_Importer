@@ -25,7 +25,7 @@ namespace Formula1.ImportConsole
                     return;
                 }
                 Console.WriteLine($"  Es wurden {results.Count()} Rennergebnisse eingelesen!");
-                //dbContext.Results.AddRange(results);
+                dbContext.Results.AddRange(results);
                 Console.WriteLine("Ergebnisse werden in Datenbank gespeichert (persistiert)");
                 dbContext.SaveChanges();
                 Console.Write("Beenden mit Eingabetaste ...");

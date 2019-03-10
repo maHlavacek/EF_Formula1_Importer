@@ -15,6 +15,8 @@ namespace Formula1.Core.Entities
 
         public int Points { get; set; }
 
+        public int ResultId { get; set; }
+
         public override string ToString()
         {
             return $"{Race} {Driver} Platz: {Position} Punkte: {Points}";

@@ -10,5 +10,7 @@ namespace Formula1.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
+
+        public DbSet<Driver> Drivers { get; set; }
     }
 }

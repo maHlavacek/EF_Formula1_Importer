@@ -10,10 +10,6 @@ namespace Formula1.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
-        //public ApplicationDbContext()
-        //{
-
-        //}
 
         public DbSet<Result> Results { get; set; }
         public DbSet<Team> Teams { get; set; }

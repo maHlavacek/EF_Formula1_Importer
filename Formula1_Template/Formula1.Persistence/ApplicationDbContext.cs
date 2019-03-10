@@ -12,9 +12,9 @@ namespace Formula1.Persistence
     {
 
         public DbSet<Result> Results { get; set; }
-        public DbSet<Team> Teams { get; set; }
-        public DbSet<Race> Races { get; set; }
-        public DbSet<Driver> Drivers { get; set; }
+        //public DbSet<Team> Teams { get; set; }
+        //public DbSet<Race> Races { get; set; }
+        //public DbSet<Driver> Drivers { get; set; }
 
     }
 }

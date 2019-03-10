@@ -52,6 +52,14 @@
     <Compile Include="Migrations\201903101431029_FirstTry.Designer.cs">
       <DependentUpon>201903101431029_FirstTry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903101818478_SecondTry.cs" />
+    <Compile Include="Migrations\201903101818478_SecondTry.Designer.cs">
+      <DependentUpon>201903101818478_SecondTry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903101834217_addTeamToDriver.cs" />
+    <Compile Include="Migrations\201903101834217_addTeamToDriver.Designer.cs">
+      <DependentUpon>201903101834217_addTeamToDriver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +76,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903101431029_FirstTry.resx">
       <DependentUpon>201903101431029_FirstTry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903101818478_SecondTry.resx">
+      <DependentUpon>201903101818478_SecondTry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903101834217_addTeamToDriver.resx">
+      <DependentUpon>201903101834217_addTeamToDriver.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -121,6 +121,7 @@ namespace Formula1.Core
                 FirstName = (string)result.Element("Driver")?.Element("GivenName"),
                 LastName = (string)result.Element("Driver")?.Element("FamilyName"),
                 Nationality = (string)result.Element("Driver")?.Element("Nationality"),
+                Team = (string)result.Element("Constructor")?.Element("Name")
             };
             Driver driverInList = drivers.SingleOrDefault(driver =>
                                         driver.LastName == newDriver.LastName &&

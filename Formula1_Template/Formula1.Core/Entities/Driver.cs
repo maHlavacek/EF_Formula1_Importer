@@ -11,10 +11,11 @@ namespace Formula1.Core.Entities
         public string LastName { get; set; }
         public string Nationality { get; set; }
         public int DriverId { get; set; }
+        public string Team { get; set; }
 
         public override string ToString()
         {
-            return $"{LastName} {FirstName}";
+            return $"{LastName} {FirstName} {Team}";
         }
 
         public string Name => ToString();

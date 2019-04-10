@@ -26,8 +26,8 @@ namespace Formula1.Core
             var xElement = XDocument.Load(racesPath).Root;
             if (xElement != null)
             {
-                races = (from race in xElement.Elements("Race")
-                         select new Race
+                races = xElement.Elements("Race")
+                         .Select(race => new Race
                          {
                              Number = (int)race.Attribute("round"),
                              Date = (DateTime)race.Element("Date"),
